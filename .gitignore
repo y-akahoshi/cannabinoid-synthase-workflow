@@ -1,0 +1,8 @@
+*.bak
+*.bak_*
+*.orig
+*.pyc
+*:Zone.Identifier
+__pycache__/
+example_out/
+example_out.log

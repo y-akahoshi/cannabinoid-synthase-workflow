@@ -1,0 +1,13 @@
+name: plant_genomics
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10.14
+  - blast=2.16.0
+  - mafft=7.526
+  - iqtree=3.1.2
+  - pip
+  - pip:
+      - biopython==1.84
+      - matplotlib==3.10.9
