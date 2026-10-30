@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "cannabinoid-synthase-workflow: multi-level (L1-L7) in silico evaluation of cannabinoid acid synthase copies"
+authors:
+  - family-names: Akahoshi
+    given-names: Yoshiyuki
+version: 1.0.0
+date-released: 2026-10-30
+license: MIT
+repository-code: "https://github.com/y-akahoshi/cannabinoid-synthase-workflow"
+keywords:
+  - Cannabis sativa
+  - cannabinoid synthase
+  - THCAS
+  - CBDAS
+  - CBCAS
+  - pangenome
+  - gene annotation
