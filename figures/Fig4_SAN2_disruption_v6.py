@@ -20,9 +20,10 @@ v5 (2026-10-23). Changes from v4, all forced by the data or by a source:
     253 onwards because of the deletion of THCAS Ser253 in CBDAS. v4 plotted
     both sets on one axis without converting, so A414, W443 and I445 were each
     drawn one residue off, and it also mislabelled H292 as H291 and Y484 as Y483.
-  * SAN2a g539950 carries a substitution, not a deletion: the active-site
-    residue at THCAS 292 reads Thr, where an absent residue would read "-".
-    v4 drew it as a deleted catalytic residue.
+  * SAN2a g539950: residues 229-301 (THCAS numbering) of the predicted protein
+    have no counterpart in the reference, so His292 is drawn as having no
+    counterpart (hatched segment). The locus carries a 7-nt deletion that the
+    GFF3 annotation models as an intron (manuscript Section 2.7).
   * Conserved residues and series-defining residues are drawn with different
     symbols. Specificity-related residues differ between functional synthases
     (THCAS/CBCAS carry A/V/W/T, CBDAS carries P/A/W/I), so a difference there
@@ -32,11 +33,14 @@ v5 (2026-10-23). Changes from v4, all forced by the data or by a source:
     copy with no internal stop, and in silico analysis cannot establish that an
     enzyme is inactive.
 
+v6 (2026-10-30): rows are ordered as Cases 1-3 of the manuscript, and SAN2b
+g313950 lists L5 among its unmet levels, as in Table 4.
+
 Input : Additional_file_1_synthase_copy_detail.tsv, and
         step4_rooted_20261012/<hap>/04_functional_residues.tsv
-Output: Fig4_SAN2_disruption_v5.{pdf,png}
+Output: Fig4_SAN2_disruption_v6.{pdf,png}
 
-    python3 Fig4_SAN2_disruption_v5.py [project_root]
+    python3 Fig4_SAN2_disruption_v6.py [project_root]
 """
 import os
 import sys
@@ -61,7 +65,7 @@ ROOT = sys.argv[1] if len(sys.argv) > 1 else os.path.normpath(
 AF1 = os.path.join(ROOT, "Additional_file_1_synthase_copy_detail.tsv")
 RESID = os.path.join(ROOT, "step4_rooted_20261012", "{hap}",
                      "04_functional_residues.tsv")
-OUTBASE = os.path.join(HERE, "Fig4_SAN2_disruption_v5")
+OUTBASE = os.path.join(HERE, "Fig4_SAN2_disruption_v6")
 
 REF_LEN = 545        # THCAS reference precursor length
 BAR_H = 0.46
@@ -93,8 +97,8 @@ SPECIFICITY = [(192, "P"), (414, "A"), (443, "W"), (445, "I")]
 
 GENES = [
     ("SAN2a", "SAN2a.chr7.v1.g539950"),
-    ("SAN2b", "SAN2b.chr7.v1.g313950"),
     ("SAN2a", "SAN2a.chr7.v1.g547390"),
+    ("SAN2b", "SAN2b.chr7.v1.g313950"),
 ]
 
 # The criterion each copy fails, restating Table 4. Kept here because L5 is a
@@ -117,7 +121,7 @@ REASON = {
         "L4 unmet: no counterpart to active-site His292\n"
         "(7 nt deletion in the locus; frame lost)",
     "SAN2b.chr7.v1.g313950":
-        "L2, L3 and L6 unmet: premature stop codon;\n"
+        "L2, L3, L5 and L6 unmet: premature stop codon;\n"
         "N-terminal region not encoded",
     "SAN2a.chr7.v1.g547390":
         "L5 unmet: not assigned to a functional clade\n"

@@ -8,7 +8,7 @@ v11 (2026-10-22): the chemotype panels now show only the materials analysed
 -- they are given in Fig. 2, Table 4 and Additional file 1. The CBCAS
 copy-number note (stale counts) was also removed and the layout tightened.
 
-Output: 08_results/figures/Fig1_cannabinoid_pathway_v11.{pdf,png}
+Output: 08_results/figures/Fig1_cannabinoid_pathway_v12.{pdf,png}
 
     python3 Fig1_pathway_v11.py
 """
@@ -25,7 +25,7 @@ matplotlib.rcParams["font.family"] = "DejaVu Sans"
 MM = 1 / 25.4
 FIG_W, FIG_H = 180 * MM, 92 * MM
 OUTDIR = os.path.dirname(os.path.abspath(__file__))
-OUTBASE = os.path.join(OUTDIR, "Fig1_cannabinoid_pathway_v11")
+OUTBASE = os.path.join(OUTDIR, "Fig1_cannabinoid_pathway_v12")
 
 C = {
     "cbga":   "#2E7D32",
@@ -137,13 +137,13 @@ def main():
         color="#666666")
     txt(ax, 93.5, 85.0, "(cannabinoid-free)", size=5.2, color="#666666")
     ax.plot([89.5, 97.5], [82.6, 82.6], color=C["p5e"], lw=0.6, zorder=4)
-    txt(ax, 93.5, 77.5, "candidates\nI52, I59 (CLR)\nLynch et al. 2025",
+    txt(ax, 93.5, 77.5, "candidates\n8 accessions (CLR)\nLynch et al. 2025",
         size=5.1, color="#666666", ls=1.6)
     ax.plot([89.5, 97.5], [72.6, 72.6], color=C["p5e"], lw=0.6, zorder=4)
     txt(ax, 93.5, 69.8, "not analysed", size=5.6, weight="bold",
         color="#777777")
     txt(ax, 93.5, 64.0, "contig-level assembly;\nno haplotype phasing\n"
-        "(N50 ≈ 0.12 Mb)", size=4.8, color="#888888", style="italic", ls=1.6)
+        "(contig N50 4.0–12.5 Mb)", size=4.8, color="#888888", style="italic", ls=1.6)
 
     ax.set_xlim(0, 100)
     ax.set_ylim(25.0, 95.5)

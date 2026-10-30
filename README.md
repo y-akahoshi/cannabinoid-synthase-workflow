@@ -175,10 +175,10 @@ their PDF/PNG output and the Fig. 3 tree (`Fig3_cross_haplotype.contree`).
 
 | Figure | Script |
 |---|---|
-| Fig. 1 Cannabinoid acid biosynthesis and chemotypes | `Fig1_pathway_v11.py` |
+| Fig. 1 Cannabinoid acid biosynthesis and chemotypes | `Fig1_pathway_v12.py` |
 | Fig. 2 Chromosome 7 synthase clusters | `Fig2_chr7_locus_map_v25.py` |
 | Fig. 3 Maximum-likelihood tree | `Fig3_phylogenetic_tree_v6.py` |
-| Fig. 4 Santhica 27 copy architecture | `Fig4_SAN2_disruption_v5.py` |
+| Fig. 4 Santhica 27 copy architecture | `Fig4_SAN2_disruption_v6.py` |
 
 ## Citation
 
