@@ -4,8 +4,9 @@ title: "cannabinoid-synthase-workflow: multi-level (L1-L7) in silico evaluation 
 authors:
   - family-names: Akahoshi
     given-names: Yoshiyuki
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-10-30
+doi: 10.5281/zenodo.23806790
 license: MIT
 repository-code: "https://github.com/y-akahoshi/cannabinoid-synthase-workflow"
 keywords:

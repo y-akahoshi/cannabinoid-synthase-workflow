@@ -1,5 +1,7 @@
 # cannabinoid-synthase-workflow
 
+[![DOI](https://zenodo.org/badge/1439704713.svg)](https://doi.org/10.5281/zenodo.23806790)
+
 A reproducible, multi-level (L1–L7) in silico workflow for identifying functional
 copies of the cannabinoid acid synthases THCAS, CBDAS and CBCAS in
 haplotype-resolved *Cannabis sativa* genome assemblies.
@@ -17,7 +19,7 @@ functional candidate.
 
 This code accompanies:
 
-> Akahoshi Y, 【YS の氏名】. 【英語タイトル】. *GigaByte* 【年;巻:記事番号】. doi:【論文 DOI】
+> Akahoshi Y, et al. Manuscript submitted to *GigaByte* (2026). The full citation will be added on publication.
 
 ## Requirements
 
@@ -181,7 +183,7 @@ their PDF/PNG output and the Fig. 3 tree (`Fig3_cross_haplotype.contree`).
 ## Citation
 
 If you use this workflow, please cite the paper above and the archived version
-of this repository: 【Zenodo DOI】.
+of this repository: doi:10.5281/zenodo.23806790 (all versions; each release also has its own DOI on Zenodo).
 
 ## License
 
