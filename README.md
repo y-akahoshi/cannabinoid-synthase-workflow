@@ -200,6 +200,19 @@ in the preprint is v1.0.2, doi:10.5281/zenodo.23810125.
 Additional file 1 of the preprint is archived separately at
 doi:[10.5281/zenodo.24281413](https://doi.org/10.5281/zenodo.24281413).
 
+## Support and contributions
+
+Questions, bug reports and feature requests: please open an issue at
+https://github.com/y-akahoshi/cannabinoid-synthase-workflow/issues
+
+Pull requests are welcome. For a change to the classification logic (the
+L1-L7 criteria or the evidence-priority rules), please open an issue first
+so that the criteria can be discussed, and run `bash tests/test_example.sh`
+before submitting.
+
+For anything that cannot be raised publicly, contact the corresponding
+author listed in `CITATION.cff`.
+
 ## License
 
 MIT License. See `LICENSE`.
