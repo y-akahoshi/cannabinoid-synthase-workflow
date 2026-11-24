@@ -19,7 +19,10 @@ functional candidate.
 
 This code accompanies:
 
-> Akahoshi Y, et al. Manuscript submitted to *GigaByte* (2026). The full citation will be added on publication.
+> Akahoshi Y, Senda Y. A multi-level *in silico* workflow for re-annotating
+> cannabinoid acid synthase loci and prioritizing functional candidates in
+> public pangenome assemblies. *agriRxiv*. 2026.
+> doi:[10.31220/agriRxiv.2026.00527](https://doi.org/10.31220/agriRxiv.2026.00527)
 
 ## Requirements
 
@@ -182,8 +185,20 @@ their PDF/PNG output and the Fig. 3 tree (`Fig3_cross_haplotype.contree`).
 
 ## Citation
 
-If you use this workflow, please cite the paper above and the archived version
-of this repository: doi:10.5281/zenodo.23806790 (all versions; each release also has its own DOI on Zenodo).
+If you use this workflow, please cite the preprint:
+
+> Akahoshi Y, Senda Y. A multi-level *in silico* workflow for re-annotating
+> cannabinoid acid synthase loci and prioritizing functional candidates in
+> public pangenome assemblies. *agriRxiv*. 2026.
+> doi:[10.31220/agriRxiv.2026.00527](https://doi.org/10.31220/agriRxiv.2026.00527)
+
+The archived code is at
+doi:[10.5281/zenodo.23806790](https://doi.org/10.5281/zenodo.23806790)
+(all versions; each release also has its own DOI on Zenodo). The version cited
+in the preprint is v1.0.2, doi:10.5281/zenodo.23810125.
+
+Additional file 1 of the preprint is archived separately at
+doi:[10.5281/zenodo.24281413](https://doi.org/10.5281/zenodo.24281413).
 
 ## License
 

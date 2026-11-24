@@ -4,8 +4,8 @@ title: "cannabinoid-synthase-workflow: multi-level (L1-L7) in silico evaluation 
 authors:
   - family-names: Akahoshi
     given-names: Yoshiyuki
-version: 1.0.2
-date-released: 2026-10-30
+version: 1.0.3
+date-released: 2026-11-24
 doi: 10.5281/zenodo.23806790
 license: MIT
 repository-code: "https://github.com/y-akahoshi/cannabinoid-synthase-workflow"
@@ -17,3 +17,17 @@ keywords:
   - CBCAS
   - pangenome
   - gene annotation
+preferred-citation:
+  type: article
+  title: "A multi-level in silico workflow for re-annotating cannabinoid acid synthase loci and prioritizing functional candidates in public pangenome assemblies"
+  authors:
+    - family-names: Akahoshi
+      given-names: Yoshiyuki
+      orcid: "https://orcid.org/0009-0001-3505-6149"
+    - family-names: Senda
+      given-names: Yoshihito
+      orcid: "https://orcid.org/0009-0000-0135-6808"
+  journal: agriRxiv
+  year: 2026
+  doi: 10.31220/agriRxiv.2026.00527
+  url: "https://doi.org/10.31220/agriRxiv.2026.00527"
